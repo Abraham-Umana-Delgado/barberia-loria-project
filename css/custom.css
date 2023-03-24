@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+.header {
+    background-image: url(../images/banner-home.png);
+    background-position: center;
+}
+
+.brand {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar-nav {
+    margin-top: 35px !important;
+    padding: 14px !important;
+    float: right !important
+}
+
+.nav_menu {
+    margin-left: auto;
+    display: none
+}
+
+:is(.nav_link, .social-networks .icon) {
+    position: relative;
+    color: #ffff !important;
+}
+
+:is(.nav_link, .social-networks .icon):is(.nav_link, .social-networks .icon):hover {
+    color: #D9B341 !important;
+}
+
+:is(.nav_link, .btn-product) {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav_link {
+    padding: 7px 13px !important;
+    font-size: 16px !important;
+    top: 7px;
+}
+
+.item {
+    display: inline-block !important;
+    margin: 0 5px !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-networks {
+    padding-left: 5px;
+}
+
+.social-networks .icon {
+    font-size: 25px;
+}
+
+.btn-product {
+    color: #ffff;
+    background: #D9B341 !important;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: solid 2px transparent !important;
+}
+
+.btn-product:hover {
+    border-color: #D9B341 !important;
+    background: transparent !important;
+    color: #D9B341 !important;
+}
+
+.banner {
+    height: 450px;
+    color: #ffff;
+}
+
+:is(.services, .benefits, .galery, .testimonies, .about, .localization, .information, .cta, .footer ) {
+    padding-top: 100px;
+    color: #ffff;
+}
+
+:is(.services, .benefits, .testimonies, .localization,.footer ) {
+    background-color: #000000;
+}
+
+:is(.galery, .about, .cta, .information) {
+    background: #1b0808;
+    box-shadow: inset 100px 4px 250px 180px #000000;
+}
+
+@media screen and (max-width:1024px) {
+
+    .navbar-nav--menu {
+        position: fixed;
+        z-index: 100;
+    }
+
+    hr.divider {
+        border-top: 2px solid #bbb;
+        width: 100%;
+        margin: auto !important
+    }
+
+    .item {
+        margin-top: 20px !important;
+        padding-bottom: 10px
+    }
+
+    .navbar-nav--menu {
+        background: radial-gradient(rgba(255, 255, 255, 0) .9%, rgba(255, 255, 255, 7.89793e-09) 58.12%, rgba(255, 255, 255, .2) 100%), #000;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+        top: 120px;
+        left: 0;
+        height: auto;
+        width: 100%;
+        justify-content: space-evenly;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .7s
+    }
+
+    .navbar-nav.show {
+        --show: block;
+        opacity: 1;
+        pointer-events: unset
+    }
+
+    .nav_menu {
+        display: flex;
+        margin-top: 40px;
+        margin-right: 30px !important;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .nav_menu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #fff;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: .2s linear;
+        margin-right: 10px
+    }
+    
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column !important
+    }
+}
