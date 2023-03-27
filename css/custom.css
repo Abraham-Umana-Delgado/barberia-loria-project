@@ -6,11 +6,6 @@
     list-style: none;
 }
 
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
-
 body {
     margin: 0;
 }
@@ -19,9 +14,21 @@ main {
     display: block;
 }
 
+p {
+    font-size: 18px !important;
+}
+
 .header {
     background-image: url(../images/banner-home.png);
     background-position: center;
+}
+
+.gold-text {
+    color: #D9B341;
+}
+
+.white-txt {
+    color: #fff !important;
 }
 
 .brand {
@@ -45,7 +52,7 @@ main {
     color: #ffff !important;
 }
 
-:is(.nav_link, .social-networks .icon):is(.nav_link, .social-networks .icon):hover {
+:is(.nav_link, .social-networks .icon):hover {
     color: #D9B341 !important;
 }
 
@@ -90,34 +97,35 @@ main {
 
 .banner {
     height: 450px;
-    color: #ffff;
     text-align: center;
 }
 
-.banner h1{
+.info-banner {
+    padding: 60px 20px !important;
+}
+
+.banner h1 {
     font-weight: bold;
-    border: 1px solid #000000;
+    -webkit-text-stroke: 1px black;
+}
+
+.banner p {
+    padding: 0 30%;
+    font-weight: 500;
 }
 
 .btn-contact {
-    border: solid 2px transparent !important;
     background-color: #ffff !important;
-    padding: 10px 20px !important;
+}
+
+.btn-contact-white {
+    border: solid 2px transparent !important;
+    padding: 10px 50px !important;
     font-weight: bold !important;
 }
 
-.btn-contact i {
-    font-size: 22px;
-}
-
-.btn-contact:hover{
-
-}
-
-
 :is(.services, .benefits, .galery, .testimonies, .about, .localization, .information, .cta, .footer) {
     padding-top: 100px;
-    color: #ffff;
 }
 
 :is(.services, .benefits, .testimonies, .localization, .footer) {
@@ -128,6 +136,67 @@ main {
     background: #1b0808;
     box-shadow: inset 100px 4px 250px 180px #000000;
 }
+
+.btn-contact i {
+    font-size: 22px;
+}
+
+.btn-contact-white:hover {
+    background-color: #D9B341 !important;
+    color: #000 !important;
+    border: 2px #000 solid !important;
+}
+
+.services .card {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.services .card h2 {
+    font-size: 25px;
+    float: left;
+}
+
+.services .card p {
+    font-size: 16px !important;
+}
+
+.services .card .price {
+    font-weight: bold;
+    text-align: end;
+    font-size: 20px !important;
+}
+
+.services .btn-contact {
+    background: #5C0000 !important;
+    border: 2px solid #F3F3F3;
+    box-shadow: inset 5px 4px 30px 5px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    font-weight: bold;
+}
+
+.services .btn-contact:hover {
+    background-color: #000 !important;
+}
+
+
+.btn-view-more {
+    background: #F2D857 !important;
+    box-shadow: inset 0px 4px 30px 10px rgba(0, 0, 0, 0.4) !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+}
+
+.btn-view-more:hover{
+    color: #000;
+
+}
+
+.localization iframe {
+    width: 100%;
+}
+
+
 
 @media screen and (max-width:1024px) {
 
@@ -192,5 +261,23 @@ main {
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: column !important
+    }
+
+    .banner p {
+        padding: 0 20%;
+    }
+
+    .services .card {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .banner p {
+        padding: 0;
+    }
+
+    .btn-contact {
+        width: 80%;
     }
 }
