@@ -8,6 +8,7 @@
 
 body {
     margin: 0;
+    background: #000 !important;
 }
 
 main {
@@ -19,6 +20,7 @@ p {
 }
 
 .header {
+    background-size: cover;
     background-image: url(../images/banner-home.png);
     background-position: center;
 }
@@ -31,15 +33,68 @@ p {
     color: #fff !important;
 }
 
-.brand {
-    width: 200px;
-    height: 200px;
+:is(.nav_link, .social-networks .icon) {
+    position: relative;
+    color: #ffff !important;
 }
 
+.menu {
+    height: 100px !important;
+    width: 100% !important;
+    background-color: transparent !important;
+}
+.button-logo .logo-barberia-loria {
+    height: 200px;
+    width: 200px;
+    top: -55px;
+    position: absolute
+}
 .navbar-nav {
-    margin-top: 35px !important;
+    margin-top: 25px !important;
     padding: 14px !important;
     float: right !important
+}
+
+.nav_link i{
+    display: none;
+}
+.item {
+    display: inline-block !important;
+    margin: 0 5px !important
+}
+.item a {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.nav_link {
+    font-size: 16px !important;
+    padding: 7px 13px !important;
+    border-radius: 3px !important;
+    font-weight: 499 !important;
+    top: 7px;
+}
+
+.item .nav_link:hover {
+    color: #E2B853 !important;
+    border: none;
+    border-bottom: 2px solid #E2B853 !important
+}
+.item .icon:hover {
+    color: #E2B853 !important;
+    border: none !important
+}
+.social-networks {
+    padding: 1px 35px 1px 30px;
+    float: right;
+    margin-right: 5px
+}
+.social-networks .item {
+    color: #ffff !important;
+    display: inline !important;
+    margin: 5px !important
+}
+.icon {
+    font-size: 25px;
 }
 
 .nav_menu {
@@ -47,10 +102,7 @@ p {
     display: none
 }
 
-:is(.nav_link, .social-networks .icon) {
-    position: relative;
-    color: #ffff !important;
-}
+
 
 :is(.nav_link, .social-networks .icon):hover {
     color: #D9B341 !important;
@@ -58,26 +110,6 @@ p {
 
 :is(.nav_link, .btn-product) {
     font-family: 'Poppins', sans-serif;
-}
-
-.nav_link {
-    padding: 7px 13px !important;
-    font-size: 16px !important;
-    top: 7px;
-}
-
-.item {
-    display: inline-block !important;
-    margin: 0 5px !important;
-    font-family: 'Poppins', sans-serif;
-}
-
-.social-networks {
-    padding-left: 5px;
-}
-
-.social-networks .icon {
-    font-size: 25px;
 }
 
 .btn-product {
@@ -89,7 +121,7 @@ p {
     font-weight: bold !important;
 }
 
-:is(.btn-product):hover {
+:is(.btn-product, .btn-view-more):hover {
     border-color: #D9B341 !important;
     background: transparent !important;
     color: #D9B341 !important;
@@ -124,13 +156,14 @@ p {
     font-weight: bold !important;
 }
 
+.col-title{
+    margin-bottom: 40px;
+}
+
 :is(.services, .benefits, .galery, .testimonies, .about, .localization, .information, .cta, .footer) {
     padding-top: 100px;
 }
 
-:is(.services, .benefits, .testimonies, .localization, .footer) {
-    background-color: #000000;
-}
 
 :is(.galery, .about, .cta, .information) {
     background: #1b0808;
@@ -149,6 +182,7 @@ p {
 
 .services .card {
     color: #000;
+    margin: 20px auto;
     margin-bottom: 20px;
 }
 
@@ -177,26 +211,33 @@ p {
 
 .services .btn-contact:hover {
     background-color: #000 !important;
+    border: #fff solid 1px;
 }
-
 
 .btn-view-more {
     background: #F2D857 !important;
     box-shadow: inset 0px 4px 30px 10px rgba(0, 0, 0, 0.4) !important;
     font-weight: bold !important;
-    padding: 10px 20px !important;
+    padding: 10px 25px !important;
+    border: solid 2px transparent !important;
 }
 
-.btn-view-more:hover{
-    color: #000;
+.benefit{
+    display: flex;
+}
 
+.icon-benefit{
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.video-testimony{
+    width: 23rem;
 }
 
 .localization iframe {
     width: 100%;
 }
-
-
 
 @media screen and (max-width:1024px) {
 
@@ -266,10 +307,13 @@ p {
     .banner p {
         padding: 0 20%;
     }
+}
 
-    .services .card {
-        margin: 20px auto;
+@media screen and (max-width:800px){
+    .benefit-responsive{
+        width: 100% !important;
     }
+
 }
 
 @media screen and (max-width:480px) {
@@ -279,5 +323,13 @@ p {
 
     .btn-contact {
         width: 80%;
+    }
+
+    .services .card{
+        width: 20rem !important;
+    }
+
+    .video-testimony{
+        width: 20rem;
     }
 }
