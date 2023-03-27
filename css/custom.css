@@ -102,8 +102,6 @@ p {
     display: none
 }
 
-
-
 :is(.nav_link, .social-networks .icon):hover {
     color: #D9B341 !important;
 }
