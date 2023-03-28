@@ -15,7 +15,7 @@ main {
     display: block;
 }
 
-p {
+:is(p, .contact-data a) {
     font-size: 18px !important;
 }
 
@@ -43,25 +43,29 @@ p {
     width: 100% !important;
     background-color: transparent !important;
 }
+
 .button-logo .logo-barberia-loria {
     height: 200px;
     width: 200px;
     top: -55px;
     position: absolute
 }
+
 .navbar-nav {
     margin-top: 25px !important;
     padding: 14px !important;
     float: right !important
 }
 
-.nav_link i{
+.nav_link i {
     display: none;
 }
+
 .item {
     display: inline-block !important;
     margin: 0 5px !important
 }
+
 .item a {
     font-family: 'Poppins', sans-serif !important;
 }
@@ -79,20 +83,24 @@ p {
     border: none;
     border-bottom: 2px solid #E2B853 !important
 }
+
 .item .icon:hover {
     color: #E2B853 !important;
     border: none !important
 }
+
 .social-networks {
     padding: 1px 35px 1px 30px;
     float: right;
     margin-right: 5px
 }
+
 .social-networks .item {
     color: #ffff !important;
     display: inline !important;
     margin: 5px !important
 }
+
 .icon {
     font-size: 25px;
 }
@@ -154,7 +162,7 @@ p {
     font-weight: bold !important;
 }
 
-.col-title{
+.col-title {
     margin-bottom: 40px;
 }
 
@@ -220,21 +228,101 @@ p {
     border: solid 2px transparent !important;
 }
 
-.benefit{
-    display: flex;
+:is(.services .btn-view-more, .testimonies .btn-view-more) {
+    margin-top: 50px;
 }
 
-.icon-benefit{
+:is(.benefit, .info-contact) {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.icon-benefit {
     font-size: 40px;
     margin-right: 20px;
 }
 
-.video-testimony{
+.video-testimony {
     width: 23rem;
+}
+
+.about .btn-view-more{
+    display: none;
+}
+
+.img-about {
+    position: relative;
+    height: 500px;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.border-img-about {
+    position: absolute;
+    border: 10px solid #D9B341;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.6);
+    height: 480px;
+    width: 250px;
+    margin-top: 70px;
+}
+
+.info-barbershop{
+    padding-top: 150px;
+    margin-left: 50px;
+}
+
+.info-barbershop h1{
+    margin-bottom: 30px;
+}
+
+.statistics{
+    margin-top: 100px !important;
+}
+
+.statistics p{
+    text-align: center;
+}
+
+.statistics .number{
+    font-size: 35px !important;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.statistics .text{
+    font-weight: 500;
+    font-size: 20px !important;
 }
 
 .localization iframe {
     width: 100%;
+}
+
+.info-contact i{
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.contact-data{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-data a{
+    padding: 2px 10px;
+}
+
+.contact-data a:hover{
+    border-bottom: solid 2px #D9B341 !important;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1200px){
+    .info-barbershop{
+        margin-left: 100px;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -305,11 +393,66 @@ p {
     .banner p {
         padding: 0 20%;
     }
+
+    .about .btn-view-more{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .wrapper-about{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-about{
+        left: 49px;
+    }
+
+    .border-img-about{
+        margin-left: -115px;
+    }
+
+    .info-barbershop{
+        flex: 1 0 100% !important;
+        margin-left: 0;  
+        padding-top: 90px;
+    }
+
+    .info-barbershop h1{
+        text-align: center;
+    }
+
+    .statistics{
+        margin-top: 50px !important;
+    }
+
+    .cta-responsive{
+        flex: 1 0 100% !important;
+    }
+
+    .info-cta{
+        margin-bottom: 40px;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width:800px){
-    .benefit-responsive{
+@media screen and (max-width:800px) {
+    .benefit-responsive {
         width: 100% !important;
+    }
+
+    .border-img-about{
+        height: 430px;
+    }
+
+    .img-about{
+        height: 450px;
+        left: 20px;
+    }
+
+    .tablet-statics{
+        flex: 1 0 100% !important;
     }
 
 }
@@ -323,11 +466,39 @@ p {
         width: 80%;
     }
 
-    .services .card{
-        width: 20rem !important;
+    .services .card {
+        width: 18rem !important;
     }
 
-    .video-testimony{
-        width: 20rem;
+    .services .card h2{
+        font-size: 18px;
+    }
+
+    .services .card .price{
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+
+    .video-testimony {
+        width: 18rem;
+    }
+
+    .border-img-about{
+        height: 350px;
+        width: 210px;
+        margin-left: -100px;
+    }
+
+    .img-about{
+        height: 380px;
+        left: 15px;
+    }
+
+    .static-mobile{
+        flex: 1 0 100% !important;
+    }
+
+    .localization iframe{
+        height: 400px;
     }
 }
