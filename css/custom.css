@@ -127,7 +127,7 @@ main {
     font-weight: bold !important;
 }
 
-:is(.btn-product, .btn-view-more):hover {
+:is(.btn-product, .btn-view-more, .btn-subscribe):hover {
     border-color: #D9B341 !important;
     background: transparent !important;
     color: #D9B341 !important;
@@ -172,8 +172,8 @@ main {
 
 
 :is(.galery, .about, .cta, .information) {
-    background: #1b0808;
-    box-shadow: inset 100px 4px 250px 180px #000000;
+    background: rgba(27, 8, 8, 0.7);
+    box-shadow: inset 0px 4px 250px 150px #000000;
 }
 
 .btn-contact i {
@@ -246,7 +246,7 @@ main {
     width: 23rem;
 }
 
-.about .btn-view-more{
+.about .btn-view-more {
     display: none;
 }
 
@@ -266,30 +266,30 @@ main {
     margin-top: 70px;
 }
 
-.info-barbershop{
+.info-barbershop {
     padding-top: 150px;
     margin-left: 50px;
 }
 
-.info-barbershop h1{
+.info-barbershop h1 {
     margin-bottom: 30px;
 }
 
-.statistics{
+.statistics {
     margin-top: 100px !important;
 }
 
-.statistics p{
+.statistics p {
     text-align: center;
 }
 
-.statistics .number{
+.statistics .number {
     font-size: 35px !important;
     font-weight: bold;
     margin-bottom: 0;
 }
 
-.statistics .text{
+.statistics .text {
     font-weight: 500;
     font-size: 20px !important;
 }
@@ -298,29 +298,67 @@ main {
     width: 100%;
 }
 
-.info-contact i{
+.info-contact i {
     margin-right: 10px;
     margin-top: 10px;
     font-size: 25px;
 }
 
-.contact-data{
+.contact-data {
     display: flex;
     justify-content: center;
 }
 
-.contact-data a{
+.contact-data a {
     padding: 2px 10px;
 }
 
-.contact-data a:hover{
-    border-bottom: solid 2px #D9B341 !important;
-    border-radius: 5px;
+.contact-data a:hover {
+    color: #D9B341 !important;
+    border-bottom: solid 1px #fff;
+}
+
+.footer-policies {
+    background: rgba(27, 8, 8, 0.6);
+    box-shadow: inset 40px 4px 100px rgba(0, 0, 0, 0.65);
+}
+
+.privacy-policies{
+    text-align: end;
+}
+
+:is(.title-schedule, .schedule, .title-subscribe){
+    margin-bottom: 25px;
+}
+
+.schedule{
+    padding: 0 20px;
+}
+
+.day{
+    float: left;
+}
+
+.hour{
+    text-align: end;
+    margin-right: 50px;
+}
+
+.paragraph-footer{
+    text-align: justify !important;
+}
+
+.btn-subscribe{
+    background-color: transparent !important;
+    border: solid 1px #fff !important;
+    color: #fff !important;
+    padding: 10px 40px !important;
+    font-weight: 500 !important;
 }
 
 
-@media screen and (min-width:1024px) and (max-width:1200px){
-    .info-barbershop{
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .info-barbershop {
         margin-left: 100px;
     }
 }
@@ -394,46 +432,50 @@ main {
         padding: 0 20%;
     }
 
-    .about .btn-view-more{
+    .about .btn-view-more {
         display: block;
         margin: 0 auto;
     }
 
-    .wrapper-about{
+    .wrapper-about {
         width: 100% !important;
         display: flex;
         justify-content: center;
     }
 
-    .img-about{
+    .img-about {
         left: 49px;
     }
 
-    .border-img-about{
+    .border-img-about {
         margin-left: -115px;
     }
 
-    .info-barbershop{
+    .info-barbershop {
         flex: 1 0 100% !important;
-        margin-left: 0;  
+        margin-left: 0;
         padding-top: 90px;
     }
 
-    .info-barbershop h1{
+    .info-barbershop h1 {
         text-align: center;
     }
 
-    .statistics{
+    .statistics {
         margin-top: 50px !important;
     }
 
-    .cta-responsive{
+    .cta-responsive {
         flex: 1 0 100% !important;
     }
 
-    .info-cta{
+    .info-cta {
         margin-bottom: 40px;
         text-align: center;
+    }
+
+    .contact-data:nth-child(3) {
+        flex: 1 0 100% !important;
     }
 }
 
@@ -442,16 +484,16 @@ main {
         width: 100% !important;
     }
 
-    .border-img-about{
+    .border-img-about {
         height: 430px;
     }
 
-    .img-about{
+    .img-about {
         height: 450px;
         left: 20px;
     }
 
-    .tablet-statics{
+    .tablet-statics {
         flex: 1 0 100% !important;
     }
 
@@ -470,11 +512,11 @@ main {
         width: 18rem !important;
     }
 
-    .services .card h2{
+    .services .card h2 {
         font-size: 18px;
     }
 
-    .services .card .price{
+    .services .card .price {
         font-size: 18px !important;
         font-weight: 600;
     }
@@ -483,22 +525,26 @@ main {
         width: 18rem;
     }
 
-    .border-img-about{
+    .border-img-about {
         height: 350px;
         width: 210px;
         margin-left: -100px;
     }
 
-    .img-about{
+    .img-about {
         height: 380px;
         left: 15px;
     }
 
-    .static-mobile{
+    .static-mobile {
         flex: 1 0 100% !important;
     }
 
-    .localization iframe{
+    .localization iframe {
         height: 400px;
+    }
+
+    .contact-data {
+        flex: 1 0 100% !important;
     }
 }
