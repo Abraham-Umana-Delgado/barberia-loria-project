@@ -41,7 +41,7 @@ main {
 .menu {
     height: 100px !important;
     width: 100% !important;
-    background-color: transparent !important;
+    z-index: 100;
 }
 
 .button-logo .logo-barberia-loria {
@@ -84,7 +84,7 @@ main {
     border-bottom: 2px solid #E2B853 !important
 }
 
-.item .icon:hover {
+.icon:hover {
     color: #E2B853 !important;
     border: none !important
 }
@@ -134,12 +134,11 @@ main {
 }
 
 .banner {
-    height: 450px;
-    text-align: center;
+    height: 550px;
 }
 
 .info-banner {
-    padding: 60px 20px !important;
+    padding: 60px 0 !important;
 }
 
 .banner h1 {
@@ -318,6 +317,30 @@ main {
     border-bottom: solid 1px #fff;
 }
 
+.brand-footer{
+    width: 250px;
+    height: 250px;
+}
+
+.footer-social{
+    position: relative;
+    top: -50px;
+}
+
+.footer .icon{
+    margin-right: 20px;
+}
+
+.table-schedule {
+    margin: 0 auto;
+    width: 90% !important;
+    font-size: 18px;
+}
+
+.table-schedule td{
+    border-style: none !important;
+}
+
 .footer-policies {
     background: rgba(27, 8, 8, 0.6);
     box-shadow: inset 40px 4px 100px rgba(0, 0, 0, 0.65);
@@ -327,21 +350,8 @@ main {
     text-align: end;
 }
 
-:is(.title-schedule, .schedule, .title-subscribe){
+:is(.title-schedule, .title-subscribe){
     margin-bottom: 25px;
-}
-
-.schedule{
-    padding: 0 20px;
-}
-
-.day{
-    float: left;
-}
-
-.hour{
-    text-align: end;
-    margin-right: 50px;
 }
 
 .paragraph-footer{
@@ -355,7 +365,6 @@ main {
     padding: 10px 40px !important;
     font-weight: 500 !important;
 }
-
 
 @media screen and (min-width:1024px) and (max-width:1200px) {
     .info-barbershop {
@@ -477,6 +486,27 @@ main {
     .contact-data:nth-child(3) {
         flex: 1 0 100% !important;
     }
+
+    .footer-responsive{
+        flex: 1 0 100% !important;
+    }
+
+    .title-schedule{
+        text-align: center !important;
+    }
+    
+    :is(.copyright, .text-policies, .paragraph-footer){
+        text-align: center !important;
+    }
+
+    .subcribe-col{
+        margin: 40px  0 !important;
+    }
+    
+
+    .table-schedule{
+        width: 50% !important;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -495,6 +525,10 @@ main {
 
     .tablet-statics {
         flex: 1 0 100% !important;
+    }
+
+    .table-schedule{
+        width: 60% !important;
     }
 
 }
@@ -546,5 +580,13 @@ main {
 
     .contact-data {
         flex: 1 0 100% !important;
+    }
+
+    .table-schedule{
+        width: 100% !important;
+    }
+
+    .hour{
+        text-align: end !important;
     }
 }
