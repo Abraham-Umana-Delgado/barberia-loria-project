@@ -15,14 +15,9 @@ main {
     display: block;
 }
 
+
 :is(p, .contact-data a) {
     font-size: 18px !important;
-}
-
-.header {
-    background-size: cover;
-    background-image: url(../images/banner-home.png);
-    background-position: center;
 }
 
 .gold-text {
@@ -39,20 +34,29 @@ main {
 }
 
 .menu {
-    height: 100px !important;
+    position: fixed;
+    height: 135px !important;
     width: 100% !important;
     z-index: 100;
+    transition: background-color 0.5s ease;
+}
+
+.black-background{
+    background-color: #000;
+}
+
+.transparent{
+    background-color: transparent;
 }
 
 .button-logo .logo-barberia-loria {
-    height: 200px;
-    width: 200px;
-    top: -55px;
+    width: 180px;
+    top: -25px;
     position: absolute
 }
 
 .navbar-nav {
-    margin-top: 25px !important;
+    margin-top: 30px !important;
     padding: 14px !important;
     float: right !important
 }
@@ -134,7 +138,7 @@ main {
 }
 
 .banner {
-    height: 550px;
+    height: 600px !important;
 }
 
 .info-banner {
@@ -378,6 +382,10 @@ main {
 
 @media screen and (max-width:1024px) {
 
+    .menu{
+        position: fixed;
+    }
+
     .navbar-nav--menu {
         position: fixed;
         z-index: 100;
@@ -395,8 +403,7 @@ main {
     }
 
     .navbar-nav--menu {
-        background: radial-gradient(rgba(255, 255, 255, 0) .9%, rgba(255, 255, 255, 7.89793e-09) 58.12%, rgba(255, 255, 255, .2) 100%), #000;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+        background-color: #000;
         top: 120px;
         left: 0;
         height: auto;
@@ -413,9 +420,14 @@ main {
         pointer-events: unset
     }
 
+    .navbar-nav{
+        margin-top: 0 !important;
+    }
+
     .nav_menu {
         display: flex;
         margin-right: 30px !important;
+        margin-top: 50px;
         width: 40px;
         height: 40px;
         border: none;
@@ -439,6 +451,24 @@ main {
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: column !important
+    }
+
+    .nav_link i{
+        display: inline-block;
+    }
+
+    .nav_menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0, 0);
+        background: #fff
+    }
+
+    .nav_menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px)
+    }
+
+    .nav_menu.close span:nth-child(3) {
+        display: none
     }
 
     .banner p {
