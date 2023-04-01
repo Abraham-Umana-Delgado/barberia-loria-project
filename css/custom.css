@@ -15,6 +15,14 @@ main {
     display: block;
 }
 
+:is(h1, .item a, .btn-contact, h2, .btn-subscribe, .btn-view-more){
+    font-family: 'Poppins', sans-serif;
+}
+
+:is(p, h3, .day, .hour, .info-contact a){
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 
 :is(p, .contact-data a) {
     font-size: 18px !important;
@@ -35,10 +43,12 @@ main {
 
 .menu {
     position: fixed;
-    height: 135px !important;
+    height: 120px !important;
     width: 100% !important;
     z-index: 100;
     transition: background-color 0.5s ease;
+    background-color: #000;
+    box-shadow: 100px 0px 100px 30px rgba(217, 179, 65, 0.5);
 }
 
 .black-background{
@@ -50,7 +60,7 @@ main {
 }
 
 .button-logo .logo-barberia-loria {
-    width: 180px;
+    width: 170px;
     top: -25px;
     position: absolute
 }
@@ -68,10 +78,6 @@ main {
 .item {
     display: inline-block !important;
     margin: 0 5px !important
-}
-
-.item a {
-    font-family: 'Poppins', sans-serif !important;
 }
 
 .nav_link {
@@ -114,10 +120,6 @@ main {
     display: none
 }
 
-.banner-slide .carousel-caption {
-    bottom: 10rem !important;
-}
-
 :is(.nav_link, .social-networks .icon):hover {
     color: #D9B341 !important;
 }
@@ -142,7 +144,13 @@ main {
 }
 
 .banner {
-    height: 600px !important;
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    height: 600px;
+    top: 120px;
+    margin-bottom: 100px;
 }
 
 .info-banner {
@@ -150,13 +158,15 @@ main {
 }
 
 .banner h1 {
-    font-weight: bold;
+    font-size: 50px !important;
+    font-weight: 700;
     -webkit-text-stroke: 1px black;
 }
 
 .banner p {
     padding: 0 20%;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px !important;
 }
 
 .btn-contact {
@@ -202,6 +212,7 @@ main {
 .services .card h2 {
     font-size: 25px;
     float: left;
+    font-weight: 500;
 }
 
 .services .card p {
@@ -209,9 +220,9 @@ main {
 }
 
 .services .card .price {
-    font-weight: bold;
+    font-weight: 600;
     text-align: end;
-    font-size: 20px !important;
+    font-size: 22px !important;
 }
 
 .services .btn-contact {
@@ -219,7 +230,7 @@ main {
     border: 2px solid #F3F3F3;
     box-shadow: inset 5px 4px 30px 5px rgba(0, 0, 0, 0.7);
     width: 100%;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .services .btn-contact:hover {
@@ -332,11 +343,13 @@ main {
 .brand-footer{
     width: 250px;
     height: 250px;
+    margin-left: -28px;
 }
 
 .footer-social{
     position: relative;
     top: -50px;
+    left: -50px;
 }
 
 .footer .icon{
@@ -387,7 +400,7 @@ main {
 @media screen and (max-width:1024px) {
 
     .menu{
-        position: fixed;
+        height: 110px !important;
     }
 
     .navbar-nav--menu {
@@ -403,12 +416,12 @@ main {
 
     .item {
         margin-top: 20px !important;
-        padding-bottom: 10px
+        padding-bottom: 19px
     }
 
     .navbar-nav--menu {
         background-color: #000;
-        top: 120px;
+        top: 110px;
         left: 0;
         height: auto;
         width: 100%;
@@ -475,6 +488,10 @@ main {
         display: none
     }
 
+    .banner {
+        top: 110px;
+    }
+
     .banner p {
         padding: 0 20%;
     }
@@ -538,6 +555,15 @@ main {
         flex: 1 0 100% !important;
     }
 
+    .brand-mobile{
+        text-align: center !important;
+    }
+
+    .footer-social
+    {
+        left: 0;
+    }
+
     .title-schedule{
         text-align: center !important;
     }
@@ -553,6 +579,7 @@ main {
 
     .table-schedule{
         width: 50% !important;
+        text-align: center;
     }
 }
 
@@ -581,8 +608,23 @@ main {
 }
 
 @media screen and (max-width:480px) {
+
+    .button-logo .logo-barberia-loria{
+        width: 150px;
+        top: -12px;
+    }
+
+    .info-banner{
+        padding: 100px 0 !important;
+    }
+
+    .banner h1{
+        font-size: 35px !important;
+    }
+
     .banner p {
         padding: 0;
+        font-size: 18px !important;
     }
 
     .btn-contact {
