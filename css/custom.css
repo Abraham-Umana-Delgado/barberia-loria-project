@@ -53,6 +53,7 @@ main {
 
 .black-background{
     background-color: #000;
+    box-shadow: none;
 }
 
 .transparent{
@@ -184,7 +185,7 @@ main {
 }
 
 :is(.services, .benefits, .galery, .testimonies, .about, .localization, .information, .cta, .footer) {
-    padding-top: 100px;
+    padding-top: 180px;
 }
 
 
@@ -318,6 +319,10 @@ main {
 
 .localization iframe {
     width: 100%;
+}
+
+:is(.video-cta, .localization iframe){
+    border-radius: 10px;
 }
 
 .info-contact i {
@@ -547,6 +552,7 @@ main {
         text-align: center;
     }
 
+
     .contact-data:nth-child(3) {
         flex: 1 0 100% !important;
     }
@@ -673,6 +679,7 @@ main {
 
     .contact-data {
         flex: 1 0 100% !important;
+        justify-content: left;
     }
 
     .table-schedule{
