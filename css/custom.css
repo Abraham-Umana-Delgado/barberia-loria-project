@@ -265,7 +265,7 @@ main {
     margin-right: 20px;
 }
 
-.video-testimony {
+.img-testimony {
     width: 23rem;
 }
 
@@ -403,6 +403,10 @@ main {
 }
 
 @media screen and (max-width:1024px) {
+
+    p{
+        font-size: 16px !important;
+    }
 
     .menu{
         height: 110px !important;
@@ -621,7 +625,7 @@ main {
     }
 
     .info-banner{
-        padding: 100px 0 !important;
+        padding: 140px 0 !important;
     }
 
     .banner h1{
@@ -654,8 +658,8 @@ main {
         padding: 0;
     }
 
-    .testimonies img {
-        width: 18rem;
+    .img-testimony {
+        width: 18rem !important;
     }
 
     .border-img-about {
