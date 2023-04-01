@@ -677,6 +677,14 @@ main {
         flex: 1 0 100% !important;
     }
 
+    .autority{
+        margin-bottom: 50px !important;
+    }
+
+    .autority-container{
+        margin-top: 100px !important;
+    }
+
     .localization iframe {
         height: 400px;
     }
