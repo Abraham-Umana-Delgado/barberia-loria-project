@@ -518,6 +518,14 @@ main {
     .benefit i{
         margin-bottom: 20px;
     }
+    
+    .hide-text{
+        display: none;
+    }
+
+    .show-text{
+        display: block;
+    }
 
     .wrapper-about {
         width: 100% !important;
