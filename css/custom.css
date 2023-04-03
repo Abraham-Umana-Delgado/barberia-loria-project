@@ -265,8 +265,17 @@ main {
     margin-right: 20px;
 }
 
+:is(.img-galery, .hide-service, .hide-testimony) {
+    display: none;
+}
+
+:is(.hide-service, .img-galery, .hide-testimony):nth-child(-n+3) {
+    display: inline-block;
+}
+
 .img-testimony {
     width: 23rem;
+    margin-bottom: 40px !important;
 }
 
 .about .btn-view-more {
@@ -405,7 +414,7 @@ main {
 
 @media screen and (max-width:1024px) {
 
-    p{
+    p {
         font-size: 16px !important;
     }
 
@@ -519,12 +528,12 @@ main {
     .benefit i {
         margin-bottom: 20px;
     }
-    
-    .hide-text{
+
+    .hide-text {
         display: none;
     }
 
-    .show{
+    .show {
         display: block;
     }
 
@@ -598,10 +607,6 @@ main {
     .table-schedule {
         width: 50% !important;
         text-align: center;
-    }
-
-    .img-social {
-        margin-bottom: 100px !important;
     }
 }
 
