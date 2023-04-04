@@ -1,7 +1,7 @@
 ScrollReveal();
 
 ScrollReveal().reveal('.reveal', {
-    delay: 200,
+    delay: 80,
     distance: '10px',
     origin: 'bottom',
     easing: 'ease-out',

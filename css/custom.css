@@ -197,6 +197,11 @@ main {
     margin-top: 50px !important;
 }
 
+.img-galery img:hover {
+    transform: scale(.95);
+    transition: 1s cubic-bezier(.19, 1, .22, 1) !important;
+}
+
 .btn-contact i {
     font-size: 22px;
 }
@@ -267,7 +272,7 @@ main {
     padding: 0 60px;
 }
 
-.benefit:hover{
+.benefit:hover {
     border: solid 1px #D9B341;
     border-radius: 0 10px;
 }
