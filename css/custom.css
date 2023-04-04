@@ -302,7 +302,6 @@ main {
 .img-testimony {
     width: 368px !important;
     margin-bottom: 40px !important;
-    aspect-ratio: 0.46;
     animation: pulse 1s ease-in-out infinite alternate;
     border-radius: 10px !important;
 }
