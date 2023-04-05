@@ -45,7 +45,6 @@ main {
     height: 120px !important;
     width: 100% !important;
     z-index: 100;
-    transition: background-color 0.5s ease;
     background-color: #000;
     box-shadow: 100px 0px 100px 30px rgba(217, 179, 65, 0.5);
 }
@@ -240,7 +239,8 @@ main {
     font-weight: 500;
 }
 
-.services .card p, .testimonies .card p{
+.services .card p,
+.testimonies .card p {
     font-size: 16px !important;
 }
 
@@ -318,22 +318,22 @@ main {
     animation: pulse 0.7s ease-in-out infinite alternate;
 }
 
-.testimonies .card-testimony{
+.testimonies .card-testimony {
     border: solid 2px #D9B341;
     border-radius: 10px;
 }
 
-.card-testimony img{
+.card-testimony img {
     border-radius: 10px;
 }
 
-.card-testimony .stars{
+.card-testimony .stars {
     font-size: 28px;
     color: #D9B341;
     margin: 10px 0;
 }
 
-.card-testimony .stars:hover{
+.card-testimony .stars:hover {
     color: #000;
 }
 
@@ -358,7 +358,6 @@ main {
 .img-about {
     position: relative;
     height: 500px;
-    z-index: 1;
     margin-left: 20px;
     aspect-ratio: 0.7;
 }
@@ -478,56 +477,69 @@ main {
     margin-top: 15px !important;
 }
 
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+.float-button,
+.whatsapp {
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+}
+
+.texto,
+.whatsapp {
     background-color: #25d366;
     color: #fff;
-    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float-button,
+.texto,
+.whatsapp {
+    position: fixed !important;
+}
+
+@keyframes palpito {
+
+    from,
+    to {
+        transform: none;
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+.float-button {
+    width: 250px;
+}
+
+.whatsapp {
+    width: 60px;
     border-radius: 50px;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 40px;
+    z-index: 100;
+    animation: .9s infinite palpito;
+    transition: 1s cubic-bezier(.19, 1, .22, 1) !important;
 }
 
-.modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-    display: none;
+.whatsapp:hover {
+    color: #25d366;
+    background-color: #fff;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+.texto {
+    right: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 180px;
+    height: 27px;
 }
 
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.modal-header h4 {
-    margin: 0;
-}
-
-.close-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+.whatsapp-icon {
+    margin-top: 5px;
 }
 
 
@@ -565,7 +577,7 @@ main {
 
     .navbar-nav--menu {
         background-color: #000;
-        top: 110px;
+        top: 108px;
         left: 0;
         height: auto;
         width: 100%;
@@ -773,6 +785,10 @@ main {
         float: left !important;
     }
 
+    .social-networks{
+        padding-left: 20px !important;
+    }
+
 }
 
 @media screen and (max-width:800px) {
@@ -818,8 +834,9 @@ main {
     .icon-footer {
         margin-left: 10px !important;
     }
-    
-    .info-contact p, .info-barbershop p{
+
+    .info-contact p,
+    .info-barbershop p {
         font-size: 16px !important;
     }
 
@@ -828,16 +845,18 @@ main {
         flex: 1 0 100% !important;
     }
 
-    .statistics, .localization, .cta{
+    .statistics,
+    .localization,
+    .cta {
         padding: 100px 0 !important;
     }
-    
-    .information{
+
+    .information {
         margin-top: 0 !important;
         padding-top: 60px !important;
     }
 
-    .table-schedule{
+    .table-schedule {
         font-size: 16px !important;
     }
 
@@ -851,8 +870,7 @@ main {
     }
 
     .info-banner {
-        padding: 120px 0 !important;
-
+       padding-bottom: 130px !important;
     }
 
     .banner h1 {
@@ -868,7 +886,7 @@ main {
         width: 80%;
     }
 
-    .btn-contact-white{
+    .btn-contact-white {
         padding: 10px 0 !important;
     }
 
@@ -889,7 +907,7 @@ main {
         padding: 0;
     }
 
-    .image-galery{
+    .image-galery {
         width: 100% !important;
     }
 
@@ -933,11 +951,11 @@ main {
         text-align: end !important;
     }
 
-    .info-cta .btn-contact{
+    .info-cta .btn-contact {
         width: 100% !important;
     }
 
-    .info-cta p{
+    .info-cta p {
         font-size: 16px !important;
     }
 
