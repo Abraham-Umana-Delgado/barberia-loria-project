@@ -788,11 +788,6 @@ main {
     .social-networks {
         padding-left: 20px !important;
     }
-
-    .float-button,
-    .whatsapp {
-        margin-bottom: 60px !important;
-    }
 }
 
 @media screen and (max-width:800px) {
