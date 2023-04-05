@@ -785,10 +785,14 @@ main {
         float: left !important;
     }
 
-    .social-networks{
+    .social-networks {
         padding-left: 20px !important;
     }
 
+    .float-button,
+    .whatsapp {
+        margin-bottom: 60px !important;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -870,7 +874,7 @@ main {
     }
 
     .info-banner {
-       padding-top:135px !important;
+        padding-top: 135px !important;
     }
 
     .banner h1 {
