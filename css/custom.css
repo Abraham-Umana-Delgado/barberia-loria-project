@@ -62,7 +62,8 @@ main {
 .button-logo .logo-barberia-loria {
     width: 170px;
     top: -25px;
-    position: absolute
+    position: absolute;
+    aspect-ratio: 1;
 }
 
 .navbar-nav {
@@ -802,8 +803,12 @@ main {
         width: 80%;
     }
 
+    .btn-contact-white{
+        padding: 10px 0 !important;
+    }
+
     .services .card {
-        width: 18rem !important;
+        width: auto !important;
     }
 
     .services .card h2 {
@@ -817,6 +822,10 @@ main {
 
     .benefit {
         padding: 0;
+    }
+
+    .image-galery{
+        width: 100% !important;
     }
 
     .img-testimony {
