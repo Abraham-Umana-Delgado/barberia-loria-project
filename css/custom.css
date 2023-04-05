@@ -223,7 +223,7 @@ main {
     border: 2px #000 solid !important;
 }
 
-.services .card {
+:is(.services .card, .testimonies .card) {
     color: #000;
     margin: 20px auto;
     margin-bottom: 20px;
@@ -240,7 +240,7 @@ main {
     font-weight: 500;
 }
 
-.services .card p {
+.services .card p, .testimonies .card p{
     font-size: 16px !important;
 }
 
@@ -318,10 +318,23 @@ main {
     animation: pulse 0.7s ease-in-out infinite alternate;
 }
 
-.img-testimony {
-    width: 368px !important;
-    margin-bottom: 20px !important;
-    border-radius: 10px !important;
+.testimonies .card-testimony{
+    border: solid 2px #D9B341;
+    border-radius: 10px;
+}
+
+.card-testimony img{
+    border-radius: 10px;
+}
+
+.card-testimony .stars{
+    font-size: 28px;
+    color: #D9B341;
+    margin: 10px 0;
+}
+
+.card-testimony .stars:hover{
+    color: #000;
 }
 
 @keyframes pulse {
@@ -807,7 +820,7 @@ main {
         padding: 10px 0 !important;
     }
 
-    .services .card {
+    :is(.services .card, .testimonies .card) {
         width: auto !important;
     }
 
