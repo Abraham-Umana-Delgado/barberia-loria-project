@@ -873,7 +873,7 @@ main {
     }
 
     :is(.services .card, .testimonies .card) {
-        width: auto !important;
+        width: 18rem !important;
     }
 
     .services .card h2 {
