@@ -328,7 +328,6 @@ main {
 }
 
 .card-testimony .stars {
-    font-size: 28px;
     color: #D9B341;
     margin: 10px 0;
 }
@@ -862,6 +861,9 @@ main {
 }
 
 @media screen and (max-width:480px) {
+    section .row{
+        margin: auto 0 !important;
+    }
 
     .button-logo .logo-barberia-loria {
         width: 150px;
@@ -889,8 +891,12 @@ main {
         padding: 10px 0 !important;
     }
 
+    :is(.hide-service, .hide-testimony){
+      flex: 1 0 100% !important;  
+    }
+
     :is(.services .card, .testimonies .card) {
-        width: 18rem !important;
+        width: auto!important;
     }
 
     .services .card h2 {
