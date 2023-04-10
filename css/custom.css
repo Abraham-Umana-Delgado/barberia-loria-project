@@ -327,6 +327,11 @@ main {
     border-radius: 10px;
 }
 
+.card-testimony  h3{
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
 .card-testimony .stars {
     color: #D9B341;
     margin: 10px 0;
