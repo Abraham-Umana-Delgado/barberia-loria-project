@@ -327,7 +327,7 @@ main {
     border-radius: 10px;
 }
 
-.card-testimony  h3{
+.card-testimony h3 {
     font-size: 18px !important;
     font-weight: 600;
 }
@@ -542,11 +542,6 @@ main {
     height: 27px;
 }
 
-.whatsapp-icon {
-    margin-top: 5px;
-}
-
-
 @media screen and (min-width:1024px) and (max-width:1200px) {
     .info-barbershop {
         margin-left: 100px;
@@ -577,6 +572,11 @@ main {
     .item {
         margin-top: 20px !important;
         padding-bottom: 19px
+    }
+
+    .item-icons {
+        transition: transform 0.3s ease-in !important;
+        animation: moverIcono 1s infinite alternate !important;
     }
 
     .navbar-nav--menu {
@@ -646,6 +646,18 @@ main {
 
     .nav_menu.close span:nth-child(3) {
         display: none
+    }
+
+    @keyframes moverIcono {
+        0% {
+            transform: scale(0.8);
+            /* Estado inicial de la animación */
+        }
+
+        100% {
+            transform: scale(1);
+            /* Estado final de la animación */
+        }
     }
 
     .banner {
@@ -764,7 +776,7 @@ main {
     }
 
     .paragraph-footer {
-        padding: 0 200px !important;
+        padding: 0 100px !important;
         text-align: center !important;
     }
 
@@ -866,7 +878,7 @@ main {
 }
 
 @media screen and (max-width:480px) {
-    section .row{
+    section .row {
         margin: auto 0 !important;
     }
 
@@ -896,12 +908,12 @@ main {
         padding: 10px 0 !important;
     }
 
-    :is(.hide-service, .hide-testimony){
-      flex: 1 0 100% !important;  
+    :is(.services .card, .testimonies .card) {
+        width: auto !important;
     }
 
-    :is(.services .card, .testimonies .card) {
-        width: auto!important;
+    :is(.hide-service, .hide-testimony) {
+        flex: 1 0 100% !important;
     }
 
     .services .card h2 {
