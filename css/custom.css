@@ -484,7 +484,7 @@ main {
 }
 
 :is(.texto,.whatsapp) {
-    background-color: #25d366;
+    background-color: #0bbb4c;
     color: #fff;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
