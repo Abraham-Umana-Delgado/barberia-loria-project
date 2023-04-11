@@ -459,10 +459,6 @@ main {
     border-style: none !important;
 }
 
-.privacy-policies {
-    text-align: end;
-}
-
 :is(.title-schedule, .title-subscribe) {
     margin-bottom: 25px;
 }
@@ -481,24 +477,20 @@ main {
     margin-top: 15px !important;
 }
 
-.float-button,
-.whatsapp {
+:is(.float-button,.whatsapp ){
     height: 60px;
     bottom: 55px;
     right: 40px;
 }
 
-.texto,
-.whatsapp {
+:is(.texto,.whatsapp) {
     background-color: #25d366;
     color: #fff;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
 
-.float-button,
-.texto,
-.whatsapp {
+:is(.float-button, .texto,.whatsapp) {
     position: fixed !important;
 }
 
@@ -758,7 +750,7 @@ main {
         text-align: center !important;
     }
 
-    :is(.copyright, .text-policies, .paragraph-footer) {
+    :is(.copyright, .paragraph-footer) {
         text-align: center !important;
     }
 
@@ -878,6 +870,11 @@ main {
 }
 
 @media screen and (max-width:480px) {
+
+    :is(p, .contact-data a) {
+        font-size: 16px !important;
+    }
+
     section .row {
         margin: auto 0 !important;
     }
@@ -908,20 +905,19 @@ main {
         padding: 10px 0 !important;
     }
 
-    :is(.services .card, .testimonies .card) {
-        width: auto !important;
-    }
-
     :is(.hide-service, .hide-testimony) {
         flex: 1 0 100% !important;
     }
 
-    .services .card h2 {
-        font-size: 18px;
+    :is(.services .card, .testimonies .card) {
+        width: auto !important;
+    }
+
+    :is(.services .card h2, .services .card .price ) {
+        font-size: 20px;
     }
 
     .services .card .price {
-        font-size: 18px !important;
         font-weight: 600;
     }
 
@@ -977,8 +973,7 @@ main {
         width: 100% !important;
     }
 
-    .info-cta p {
-        font-size: 16px !important;
+    .whatsapp .texto{
+        display: none !important;
     }
-
 }
