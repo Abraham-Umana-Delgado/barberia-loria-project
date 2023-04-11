@@ -59,7 +59,7 @@ main {
 }
 
 .button-logo .logo-barberia-loria {
-    width: 170px;
+    width: 150px;
     top: -25px;
     position: absolute;
     aspect-ratio: 1;
@@ -477,20 +477,20 @@ main {
     margin-top: 15px !important;
 }
 
-:is(.float-button,.whatsapp ){
+:is(.float-button, .whatsapp) {
     height: 60px;
     bottom: 55px;
     right: 40px;
 }
 
-:is(.texto,.whatsapp) {
-    background-color: #0bbb4c;
+:is(.texto, .whatsapp) {
+    background-color: #0d7834;
     color: #fff;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
 
-:is(.float-button, .texto,.whatsapp) {
+:is(.float-button, .texto, .whatsapp) {
     position: fixed !important;
 }
 
@@ -880,8 +880,9 @@ main {
     }
 
     .button-logo .logo-barberia-loria {
-        width: 150px;
-        top: -12px;
+        width: 120px;
+        height: auto !important;
+        top: 1px;
     }
 
     .info-banner {
@@ -913,7 +914,7 @@ main {
         width: auto !important;
     }
 
-    :is(.services .card h2, .services .card .price ) {
+    :is(.services .card h2, .services .card .price) {
         font-size: 20px;
     }
 
@@ -973,7 +974,5 @@ main {
         width: 100% !important;
     }
 
-    .whatsapp .texto{
-        display: none !important;
-    }
+   
 }
