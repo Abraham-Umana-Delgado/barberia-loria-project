@@ -18,7 +18,7 @@ menuLinks.forEach(menuLink => {
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 5) {
     nav.classList.add('black-background');
     nav.classList.remove('transparent');
   } else {

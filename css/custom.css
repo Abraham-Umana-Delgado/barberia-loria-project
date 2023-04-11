@@ -146,7 +146,7 @@ main {
 .banner {
     position: relative;
     background-size: cover;
-    background-image: url(../images/banner.png);
+    background-image: url(../images/banner.webp);
     background-position: center;
     height: 700px;
     top: 120px;
