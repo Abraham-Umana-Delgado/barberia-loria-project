@@ -17,6 +17,7 @@ main {
 
 .fa-whatsapp-btn{
     font-size: 45px !important;
+    padding-left: 2px !important;
 }
 
 :is(h1, .item a, .btn-contact, h2, .btn-subscribe, .btn-view-more) {
