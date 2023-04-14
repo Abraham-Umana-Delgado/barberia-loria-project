@@ -19,6 +19,12 @@ main {
     font-size: 42px !important;
 }
 
+.float-button .whatsapp .texto{
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: 500 !important;
+}
+
 :is(h1, .item a, .btn-contact, h2, .btn-subscribe, .btn-view-more) {
     font-family: 'Poppins', sans-serif;
 }
@@ -978,7 +984,4 @@ main {
         width: 100% !important;
     }
 
-    .float-button .whatsapp .texto{
-        display: none !important;
-    }
 }
