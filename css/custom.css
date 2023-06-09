@@ -17,14 +17,8 @@ main {
 
 .fa-whatsapp-btn{
     font-size: 48px !important;
-    padding-top: 5px !important;
+    padding-top: 6px !important;
     padding-left: 2px !important;
-}
-
-.float-button .whatsapp .texto{
-    background-color: #fff !important;
-    color: #000 !important;
-    font-weight: 500 !important;
 }
 
 :is(h1, .item a, .btn-contact, h2, .btn-subscribe, .btn-view-more) {
@@ -496,7 +490,7 @@ main {
 }
 
 :is(.texto, .whatsapp) {
-    background-color: #3cc36d;
+    background-color: #156633;
     color: #fff;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
