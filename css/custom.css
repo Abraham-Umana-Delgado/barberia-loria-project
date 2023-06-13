@@ -490,7 +490,7 @@ main {
 }
 
 :is(.texto, .whatsapp) {
-    background-color: #156633;
+    background-color: #16ec64;
     color: #fff;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
@@ -521,17 +521,16 @@ main {
     border-radius: 50px;
     font-size: 40px;
     z-index: 100;
-    animation: .9s infinite palpito;
     transition: 1s cubic-bezier(.19, 1, .22, 1) !important;
 }
 
 .whatsapp:hover {
-    color: #25d366;
+    color: #16ec64;
     background-color: #fff;
 }
 
 .texto {
-    right: 70px;
+    right: 105px;
     font-size: 16px;
     font-weight: 700;
     margin-top: 20px;
@@ -983,7 +982,4 @@ main {
     .float-button .whatsapp .texto{
     display: none !important;
     }
-
-
-
 }
